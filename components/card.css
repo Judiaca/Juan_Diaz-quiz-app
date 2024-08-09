@@ -1,0 +1,40 @@
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.card__question {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card__categories {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.card__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #45a049;
+}
