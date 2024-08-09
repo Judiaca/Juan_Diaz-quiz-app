@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="app-title">Quiz App</h1>
+    </header>
+
+    <div class="container">
+      <!-- Question Cards -->
+      <div class="card">
+        <div class="card__bookmark" id="bookmark1">★</div>
+        <p class="card__question">
+          What two words every programmer learned to code first?
+        </p>
+        <div class="card__categories">#Programming #Basics</div>
+        <button class="card__button" onclick="showAnswer(this)">
+          Show Answer
+        </button>
+        <div class="card__answer" style="display: none">Hello, world.</div>
+      </div>
+      <!-- Repeat similar card structure for other questions -->
+    </div>
+
+    <footer class="footer navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="profile.html">Profile</a>
+    </footer>
+
+    <script>
+      function showAnswer(button) {
+        const answer = button.nextElementSibling;
+        answer.style.display =
+          answer.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
