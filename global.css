@@ -1,45 +1,92 @@
-body {
-  font-family: Arial, sans-serif;
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
+/* Set base font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Set width and center content */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.app-title {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
-
-.navbar a.active {
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+/* Responsive Image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Section Padding */
+main {
+  padding: 20px 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
 }

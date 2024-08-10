@@ -6,20 +6,67 @@
     <title>Quiz App - Bookmarks</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="header">
-      <h1 class="app-title">Quiz App - Bookmarks</h1>
+      <h1 class="app-title">Bookmarks</h1>
     </header>
 
-    <div class="container">
-      <!-- Bookmarked Question Cards -->
-      <!-- Similar structure to the index.html but only bookmarked cards should appear here -->
-    </div>
+    <!-- Main Content -->
+    <main role="main">
+      <section class="quiz-app__question-card">
+        <!-- Bookmark question cards will be dynamically loaded here -->
+        <p>No bookmarks yet.</p>
+      </section>
+    </main>
 
+    <!-- Footer Navigation -->
     <footer class="footer navbar">
-      <a href="index.html">Home</a>
-      <a href="bookmarks.html" class="active">Bookmarks</a>
-      <a href="profile.html">Profile</a>
+      <a href="index.html" class="navbar__link">
+        <img
+          src="./img/home_filled.png"
+          alt="Home"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link--active">
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+        />
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="profile.html" class="navbar__link">
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Profile</span>
+      </a>
     </footer>
+
+    <!-- External JavaScript -->
+    <script src="index.js"></script>
   </body>
 </html>

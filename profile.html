@@ -2,26 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App - Profile</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, initial-scale=1"
+    />
+    <title>Quiz App - Bookmarks</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="header">
-      <h1 class="app-title">Quiz App - Profile</h1>
+      <h1 class="app-title">Bookmarks</h1>
     </header>
 
-    <div class="container">
-      <h2>Your Profile</h2>
-      <p>Username: [Your Name]</p>
-      <p>Email: [Your Email]</p>
-      <p>Settings: [Your Settings]</p>
-    </div>
+    <!-- Main Content -->
+    <main role="main">
+      <section class="quiz-app__question-card">
+        <!-- Bookmark question cards will be dynamically loaded here -->
+        <p>No bookmarks yet.</p>
+      </section>
+    </main>
 
+    <!-- Footer Navigation -->
     <footer class="footer navbar">
-      <a href="index.html">Home</a>
-      <a href="bookmarks.html">Bookmarks</a>
-      <a href="profile.html" class="active">Profile</a>
+      <a href="index.html" class="navbar__link">
+        <img
+          src="./img/home_filled.png"
+          alt="Home"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link">
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="profile.html" class="navbar__link--active">
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+        />
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <span>Profile</span>
+      </a>
     </footer>
+
+    <!-- External JavaScript -->
+    <script src="index.js"></script>
   </body>
 </html>

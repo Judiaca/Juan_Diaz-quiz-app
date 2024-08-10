@@ -1,31 +1,53 @@
-/* navigation.css */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 10px;
+.footer {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  background-color: #007bff; /* Matching the header background color */
+  border-top: 1px solid #ddd;
   position: fixed;
   width: 100%;
   bottom: 0;
-  left: 0;
-  z-index: 1000;
+  color: #fff; /* Footer text color */
 }
 
-.navbar a {
-  color: white;
+.navbar__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: #fff; /* Navbar link color */
+  font-size: 0.8rem;
 }
 
-.navbar a:hover {
-  background-color: #575757;
+.navbar__icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
 }
 
-.navbar a.active {
-  background-color: #4caf50;
+.navbar__link--active span {
   font-weight: bold;
+  color: #ffdd57; /* Active link text color for better visibility */
+}
+
+@media (max-width: 767px) {
+  .navbar__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar__link {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar__link {
+    font-size: 0.8rem;
+  }
 }

@@ -1,7 +1,24 @@
-/* header.css */
 .header {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 0;
   text-align: center;
+  padding: 20px;
+  background-color: #007bff; /* Header and footer background color */
+  color: #fff; /* Text color */
+  font-size: 2rem;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff; /* Ensure the app title is white */
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
 }
