@@ -1,92 +1,76 @@
-/* Global Box Sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Reset default margins and paddings */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
-}
-
-/* Set base font styles */
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #4ab39c;
 }
 
-/* Set width and center content */
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+main {
+  padding: 20px;
+  padding-bottom: 60px;
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold;
-  color: #333;
+button {
+  border: none;
+  cursor: pointer;
 }
 
-p {
-  font-size: 1rem;
-  margin-bottom: 1em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Responsive Image */
 img {
   max-width: 100%;
-  height: auto;
 }
 
-/* Flexbox Utilities */
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #4ab39c;
 }
 
-.flex-column {
-  flex-direction: column;
+body.dark-mode .header {
+  background-color: #1f1f1f;
 }
 
-.flex-center {
-  justify-content: center;
-  align-items: center;
+body.dark-mode .profile-about-text {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #444444;
 }
 
-/* Main Section Padding */
-main {
-  padding: 20px 0;
+body.dark-mode .footer {
+  background-color: #1f1f1f;
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
+body.dark-mode .navbar__link {
+  color: #ffffff;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: 15px;
-  }
+body.dark-mode .quiz-app__question-card .card {
+  background-color: #2a2a2a; /* Darker background for question cards */
+  border-color: #444444; /* Darker border color for question cards */
+}
+
+body.dark-mode .card__option-btn {
+  background-color: #3a3a3a; /* Darker background for option buttons */
+  border-color: #555555; /* Darker border color for option buttons */
+}
+
+body.dark-mode .card__option-btn--selected {
+  background-color: #4ab39c; /* Maintain color for selected option in dark mode */
+}
+
+body.dark-mode .card__option-btn--correct {
+  background-color: #388e3c; /* Slightly darker green for correct answer */
+}
+
+body.dark-mode .card__option-btn--wrong {
+  background-color: #d32f2f; /* Slightly darker red for wrong answer */
+}
+
+body.dark-mode .card__answer {
+  background-color: #333333; /* Darker background for the answer section */
+  color: #ffffff; /* White text color for answers */
 }

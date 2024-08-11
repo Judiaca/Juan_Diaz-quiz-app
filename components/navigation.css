@@ -1,13 +1,15 @@
+/* navigation.css */
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #05476d;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for separation */
+  z-index: 1000; /* Ensure the footer is on top of other content */
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  background-color: #007bff; /* Matching the header background color */
-  border-top: 1px solid #ddd;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  color: #fff; /* Footer text color */
+  padding: 10px 0;
 }
 
 .navbar__link {
@@ -15,39 +17,48 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #fff; /* Navbar link color */
-  font-size: 0.8rem;
+  color: fff; /* Adjust text color */
+}
+
+.navbar__link--active {
+  font-weight: bold;
 }
 
 .navbar__icon {
   width: 24px;
   height: 24px;
-  margin-bottom: 5px;
 }
 
-.navbar__link--active span {
-  font-weight: bold;
-  color: #ffdd57; /* Active link text color for better visibility */
+.navbar__icon--inactive {
+  display: none;
 }
 
-@media (max-width: 767px) {
-  .navbar__icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .navbar__link {
-    font-size: 0.7rem;
-  }
+.navbar__icon--active {
+  display: inline;
+}
+/* Home page active */
+.navbar__link--home.active .navbar__icon--active {
+  display: inline;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar__icon {
-    width: 24px;
-    height: 24px;
-  }
+.navbar__link--home.active .navbar__icon--inactive {
+  display: none;
+}
 
-  .navbar__link {
-    font-size: 0.8rem;
-  }
+/* Bookmarks page active */
+.navbar__link--bookmarks.active .navbar__icon--active {
+  display: block;
+}
+
+.navbar__link--bookmarks.active .navbar__icon--inactive {
+  display: none;
+}
+
+/* Profile page active */
+.navbar__link--profile.active .navbar__icon--active {
+  display: inline;
+}
+
+.navbar__link--profile.active .navbar__icon--inactive {
+  display: none;
 }
