@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a New Question</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Create a New Question</h1>
+    </header>
+
+    <main role="main">
+      <section class="form-section">
+        <form action="submit_question.php" method="post" class="question-form">
+          <div class="form-group">
+            <label for="question">Your question:</label>
+            <textarea
+              id="question"
+              name="question"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="answer">Your answer:</label>
+            <textarea id="answer" name="answer" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="tag">Tag:</label>
+            <input type="text" id="tag" name="tag" required />
+          </div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer navbar">
+      <a href="index.html" class="navbar__link">
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/home_filled.png"
+          alt="Home"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link">
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="form.html" class="navbar__link navbar__link--active">
+        <img
+          src="./img/question.png"
+          alt="Form"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <img src="./img/question.png" alt="Form" class="navbar__icon" />
+        <span>Create</span>
+      </a>
+      <a href="profile.html" class="navbar__link">
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Profile</span>
+      </a>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
