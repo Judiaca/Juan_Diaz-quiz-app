@@ -54,9 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const optionButtons = card.querySelectorAll(".card__option-btn");
 
       optionButtons.forEach((btn) => {
-        if (btn.textContent === correctAnswer) {
+        if (correctAnswer.trim() === btn.textContent.trim()) {
           btn.classList.add("card__option-btn--correct");
-        } else if (btn.classList.contains("card__option-btn--selected")) {
+        } else if (
+          correctAnswer.trim() !== btn.textContent.trim() &&
+          btn.classList.contains("card__option-btn--selected")
+        ) {
           btn.classList.add("card__option-btn--wrong");
         }
         btn.disabled = true; // Disable all buttons after showing the answer

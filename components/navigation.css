@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   background-color: #05476d;
+  color: white;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for separation */
   z-index: 1000; /* Ensure the footer is on top of other content */
   display: flex;
