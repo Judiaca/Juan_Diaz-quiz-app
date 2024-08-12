@@ -156,4 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("darkMode", "false");
     }
   });
+
+  // Update counters dynamically (example logic, replace with actual data)
+  document.getElementById("created-questions-count").textContent = 12; // Example count
+  document.getElementById("bookmarks-count").textContent = 5; // Example count
 });
