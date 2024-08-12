@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.style.display = "none";
     }
   }
+
   const showAnswerButtons = document.querySelectorAll(".card__show-answer");
   const hideAnswerButtons = document.querySelectorAll(".card__hide-answer");
   const optionButtons = document.querySelectorAll(".card__option-btn");
@@ -75,15 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
       optionButtons.forEach((btn) => {
         btn.classList.remove(
           "card__option-btn--correct",
-          "card__option-btn--wrong",
-          "card__option-btn--selected"
+          "card__option-btn--wrong"
         );
         btn.disabled = false; // Re-enable buttons
       });
 
       card.querySelector(".card__answer").setAttribute("hidden", "true");
-      button.style.display = "none";
       card.querySelector(".card__show-answer").style.display = "block";
+      button.style.display = "none";
     });
   });
 
@@ -99,10 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.add("card__option-btn--selected");
     });
   });
-
-  // Update footer icons based on the current page
-  updateFooterIcons();
 });
+// Update footer icons based on the current page
+updateFooterIcons();
 
 function updateBookmarkIcon(button, isBookmarked) {
   const inactiveIcon = button.querySelector(".card__bookmark-icon--inactive");
@@ -157,8 +156,4 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("darkMode", "false");
     }
   });
-
-  // Update counters dynamically (example logic, replace with actual data)
-  document.getElementById("created-questions-count").textContent = 12; // Example count
-  document.getElementById("bookmarks-count").textContent = 5; // Example count
 });

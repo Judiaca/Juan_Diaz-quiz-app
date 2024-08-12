@@ -6,34 +6,30 @@
     <title>Create a New Question</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="Create a New Question-page">
     <header class="header">
-      <h1>Create a New Question</h1>
+      <h1 class="app-title">Create a New Question</h1>
     </header>
 
-    <main role="main">
-      <section class="form-section">
-        <form action="submit_question.php" method="post" class="question-form">
-          <div class="form-group">
-            <label for="question">Your question:</label>
-            <textarea
-              id="question"
-              name="question"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <label for="answer">Your answer:</label>
-            <textarea id="answer" name="answer" rows="2" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="tag">Tag:</label>
-            <input type="text" id="tag" name="tag" required />
-          </div>
-          <button type="submit" class="btn-submit">Submit</button>
-        </form>
-      </section>
+    <main>
+      <h1>Create a New Question</h1>
+      <form id="create-question-form">
+        <label for="question">Question:</label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          maxlength="200"
+          required
+        />
+        <div id="question-char-count">0/200</div>
+
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer" maxlength="100" required />
+        <div id="answer-char-count">0/100</div>
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
 
     <footer class="footer navbar">
@@ -93,5 +89,6 @@
 
     <!-- External JavaScript -->
     <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
