@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="app-title">Quiz App</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+      <section id="question-1" class="quiz-app__question-card">
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__question">
+              What two words every programmer learned to code first?
+            </h2>
+            <button class="card__bookmark" aria-label="Bookmark question 1">
+              <img
+                src="./img/bookmark.png"
+                alt="Bookmark inactive"
+                class="card__bookmark-icon card__bookmark-icon--inactive"
+              />
+              <img
+                src="./img/bookmark_filled.png"
+                alt="Bookmark active"
+                class="card__bookmark-icon card__bookmark-icon--active"
+                style="display: none"
+              />
+            </button>
+          </div>
+          <div class="card__options">
+            <button class="card__option-btn">Hello, world.</button>
+            <button class="card__option-btn">Hello, there.</button>
+            <button class="card__option-btn">Welcome, world.</button>
+          </div>
+          <button class="card__show-answer">Show Answer</button>
+          <button class="card__hide-answer" style="display: none">
+            Hide Answer
+          </button>
+          <div class="card__answer" hidden>Hello, world.</div>
+        </article>
+      </section>
+      <section id="question-2" class="quiz-app__question-card">
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__question">
+              What is the most popular programming problem?
+            </h2>
+            <button class="card__bookmark" aria-label="Bookmark question 2">
+              <img
+                src="./img/bookmark.png"
+                alt="Bookmark inactive"
+                class="card__bookmark-icon card__bookmark-icon--inactive"
+              />
+              <img
+                src="./img/bookmark_filled.png"
+                alt="Bookmark active"
+                class="card__bookmark-icon card__bookmark-icon--active"
+                style="display: none"
+              />
+            </button>
+          </div>
+          <div class="card__options">
+            <button class="card__option-btn">Missing a Semicolon.</button>
+            <button class="card__option-btn">Out of Memory.</button>
+            <button class="card__option-btn">Syntax Error.</button>
+          </div>
+          <button class="card__show-answer">Show Answer</button>
+          <button class="card__hide-answer" style="display: none">
+            Hide Answer
+          </button>
+          <div class="card__answer" hidden>Missing a Semicolon.</div>
+        </article>
+        <section id="question-3" class="quiz-app__question-card">
+          <article class="card">
+            <div class="card__header">
+              <h2 class="card__question">
+                What is the golden rule in programming?
+              </h2>
+              <button class="card__bookmark" aria-label="Bookmark question 3">
+                <img
+                  src="./img/bookmark.png"
+                  alt="Bookmark inactive"
+                  class="card__bookmark-icon card__bookmark-icon--inactive"
+                />
+                <img
+                  src="./img/bookmark_filled.png"
+                  alt="Bookmark active"
+                  class="card__bookmark-icon card__bookmark-icon--active"
+                  style="display: none"
+                />
+              </button>
+            </div>
+            <div class="card__options">
+              <button class="card__option-btn">
+                If it works, don't touch it.
+              </button>
+              <button class="card__option-btn">Always refactor code.</button>
+              <button class="card__option-btn">Comment everything.</button>
+            </div>
+            <button class="card__show-answer">Show Answer</button>
+            <button class="card__hide-answer" style="display: none">
+              Hide Answer
+            </button>
+            <div class="card__answer" hidden>If it works, don't touch it.</div>
+          </article>
+        </section>
+        <section id="question-4" class="quiz-app__question-card">
+          <article class="card">
+            <div class="card__header">
+              <h2 class="card__question">
+                What is the biggest lie in computer programming?
+              </h2>
+              <button class="card__bookmark" aria-label="Bookmark question 4">
+                <img
+                  src="./img/bookmark.png"
+                  alt="Bookmark inactive"
+                  class="card__bookmark-icon card__bookmark-icon--inactive"
+                />
+                <img
+                  src="./img/bookmark_filled.png"
+                  alt="Bookmark active"
+                  class="card__bookmark-icon card__bookmark-icon--active"
+                  style="display: none"
+                />
+              </button>
+            </div>
+            <div class="card__options">
+              <button class="card__option-btn">
+                HTML is a programming language.
+              </button>
+              <button class="card__option-btn">Java is obsolete.</button>
+              <button class="card__option-btn">Coding is easy.</button>
+            </div>
+            <button class="card__show-answer">Show Answer</button>
+            <button class="card__hide-answer" style="display: none">
+              Hide Answer
+            </button>
+            <div class="card__answer" hidden>
+              HTML is a programming language.
+            </div>
+          </article>
+        </section>
+        <!-- <section id="welcome">
+          <h1>Welcome to the Quiz App</h1>
+          <p>Select a question or create a new one!</p>
+        </section>
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__question">
+              What is the biggest lie in computer programming?
+            </h2>
+            <button class="card__bookmark" aria-label="Bookmark question 4">
+              <img
+                src="./img/bookmark.png"
+                alt="Bookmark inactive"
+                class="card__bookmark-icon card__bookmark-icon--inactive"
+              />
+              <img
+                src="./img/bookmark_filled.png"
+                alt="Bookmark active"
+                class="card__bookmark-icon card__bookmark-icon--active"
+                style="display: none"
+              />
+            </button>
+          </div>
+          <div class="card__options">
+            <button class="card__option-btn">
+              HTML is a programming language.
+            </button>
+            <button class="card__option-btn">Java is obsolete.</button>
+            <button class="card__option-btn">Coding is easy.</button>
+          </div>
+          <button class="card__show-answer">Show Answer</button>
+          <button class="card__hide-answer" style="display: none">
+            Hide Answer
+          </button>
+          <div class="card__answer" hidden>HTML is a programming language.</div>
+        </article>
+      </section> -->
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="footer navbar">
+      <a href="index.html" class="navbar__link navbar__link--active">
+        <img src="./img/home_filled.png" alt="Home" class="navbar__icon" />
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link">
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="form.html" class="navbar__link navbar__link--active">
+        <img
+          src="./img/question.png"
+          alt="Form"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <img src="./img/question.png" alt="Form" class="navbar__icon" />
+        <span>Create</span>
+      </a>
+      <a href="profile.html" class="navbar__link">
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <span>Profile</span>
+      </a>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

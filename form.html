@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a New Question</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="Create a New Question-page">
+    <header class="header">
+      <h1 class="app-title">Create a New Question</h1>
+    </header>
+
+    <main>
+      <h1>Create a New Question</h1>
+      <form id="create-question-form">
+        <label for="question">Question:</label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          maxlength="200"
+          required
+        />
+        <div id="question-char-count">0/200</div>
+
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer" maxlength="100" required />
+        <div id="answer-char-count">0/100</div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="footer navbar">
+      <a href="index.html" class="navbar__link">
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/home_filled.png"
+          alt="Home"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link">
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="form.html" class="navbar__link navbar__link--active">
+        <img
+          src="./img/question.png"
+          alt="Form"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <img src="./img/question.png" alt="Form" class="navbar__icon" />
+        <span>Create</span>
+      </a>
+      <a href="profile.html" class="navbar__link">
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+        />
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <span>Profile</span>
+      </a>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

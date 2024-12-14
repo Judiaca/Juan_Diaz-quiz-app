@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="app-title">Profile</h1>
+    </header>
+
+    <main class="profile-page">
+      <!-- Profile Picture and Name -->
+      <section class="profile-header">
+        <img
+          src="./img/Designer.jpeg"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <div class="profile-info">
+          <h2 class="profile-name">Fulano de Tal</h2>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="profile-about">
+        <h3>About Me</h3>
+        <textarea
+          class="profile-about-text"
+          placeholder="Write something about yourself..."
+        ></textarea>
+      </section>
+
+      <!-- Counters Section -->
+      <section class="profile-counters">
+        <p>Questions Created: <span id="questions-created-count">0</span></p>
+        <p>Bookmarks: <span id="bookmarks-count">0</span></p>
+      </section>
+
+      <!-- Settings Section -->
+      <section class="profile-settings">
+        <h3>Settings</h3>
+        <div class="settings-item">
+          <label for="dark-mode-switch" class="dark-mode-label"
+            >Dark Mode</label
+          >
+          <input type="checkbox" id="dark-mode-switch" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="footer navbar">
+      <a href="index.html" class="navbar__link">
+        <img
+          src="./img/home_filled.png"
+          alt="Home"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/home.png"
+          alt="Home"
+          class="navbar__icon navbar__icon--active"
+        />
+        <span>Home</span>
+      </a>
+      <a href="bookmarks.html" class="navbar__link">
+        <img
+          src="./img/bookmark_filled.png"
+          alt="Bookmarks"
+          class="navbar__icon"
+          style="display: none"
+        />
+        <img
+          src="./img/bookmark_transparent.png"
+          alt="Bookmarks"
+          class="navbar__icon navbar__icon--active"
+        />
+        <span>Bookmarks</span>
+      </a>
+      <a href="form.html" class="navbar__link navbar__link--active">
+        <img
+          src="./img/question.png"
+          alt="Form"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <img src="./img/question.png" alt="Form" class="navbar__icon" />
+        <span>Create</span>
+      </a>
+      <a href="profile.html" class="navbar__link navbar__link--active">
+        <img
+          src="./img/profile_filled.png"
+          alt="Profile"
+          class="navbar__icon"
+        />
+        <img
+          src="./img/profile.png"
+          alt="Profile"
+          class="navbar__icon navbar__icon--inactive"
+          style="display: none"
+        />
+        <span>Profile</span>
+      </a>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="./js/index.js"></script>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>

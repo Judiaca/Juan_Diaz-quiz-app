@@ -1,0 +1,52 @@
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 5px;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.card__question {
+  margin: 0;
+}
+
+.card__options {
+  margin: 10px 0;
+}
+
+.card__show-answer,
+.card__hide-answer {
+  display: block;
+  margin: 10px 0;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -20px; /* Adjust vertical position */
+  right: -25px; /* Adjust horizontal position */
+  background-color: transparent;
+}
+
+.card__bookmark-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Adjustments for the active/inactive icons */
+.card__bookmark-icon--active {
+  width: 24px;
+  height: 24px;
+}
+
+.card__bookmark-icon--inactive {
+  width: 24px;
+  height: 24px;
+}
